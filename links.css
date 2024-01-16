@@ -58,6 +58,29 @@ html {
   font-weight: bold;
 }
 
+.honbun{
+  text-align: center;
+}
+
+.kajougaki{
+  width: fit-content;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.btn_wrapper{
+  margin: 0 30px 30px 30px;
+}
+
+.box{
+  display :inline-block;
+  font-size: 2rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px dashed;
+  margin: 30px;
+}
+
 /* .top_icon h1 {
   text-align: center;
 } */
