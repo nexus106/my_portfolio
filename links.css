@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'NotoSansCJKjp';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./font/regular_w.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansCJKjp';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./font/bold_w.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansCJKjp';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./font/black_w.woff') format('woff');
+  font-display: swap;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+  }
+}
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+  font-family: 'NotoSansCJKjp', "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+}
+
+.top_icon {
+  text-align: center;
+  margin: 1.5rem ;
+}
+
+.top_icon img {
+  border-radius: 50%;
+}
+
+.username {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* .top_icon h1 {
+  text-align: center;
+} */
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+.copyright_parent {
+  margin: 1rem;
+  text-align: center;
+}
+
+.copyright {
+  display: inline-block;
+}
+
+.copyright img{
+  width: 1rem;
+}
